@@ -41,7 +41,7 @@ Picket_List_r_only <- Picket_List_r %>%
   filter(!SwiSCI_ID %in% Picket_List_f$SwiSCI_ID)
 
 # (4)
-Picket_List_r_short <- Picket_List_r %>% 
+Picket_List_r_short <- Picket_List_r_only %>% 
   select(SwiSCI_ID, `Sample Group`)
 
 matches <- inner_join(Picket_List_r_short, used_donors, by = "SwiSCI_ID", relationship = "many-to-many") %>%

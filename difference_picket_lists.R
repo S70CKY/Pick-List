@@ -10,6 +10,9 @@ library(dplyr)
 library(tidyr)
 library(writexl)
 
+# Picket_List_f = from Ramona of one year ago
+# Picket_List_r = from R code Picket List .R
+
 # Get the excel file from file path
 Picket_List_f <- read_excel("/Users/s70cky/Desktop/Picket_List/Digitalization_Biobank_samples_picklists.xlsx", sheet = "vials_report_1736442245_122") 
 Picket_List_r <- read_excel("/Users/s70cky/Desktop/df_final_data_filtered2.xlsx")

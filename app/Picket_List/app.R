@@ -37,7 +37,7 @@ server <- function(input, output, session) {
   filteredData <- reactive({
     df <- data
     
-    # Apply column removal (same as in your preprocessing)
+    # Apply column removal
     df <- df %>%
       select(-Owner, -Expiration, -`Blood withdrawl`, -`Processing start`, -`Processing finished`, 
              -`Freezed Date (outside of biobank)`, -`Blood Type`, -`Lab specialist`, 
